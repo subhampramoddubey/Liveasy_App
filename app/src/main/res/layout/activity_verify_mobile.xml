@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="112dp"
+        android:text="Please enter your mobile number"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:maxEms="12"
+        android:maxLines="2"
+        android:text="You’ll receive a 4 digit code to verify next."
+        android:textSize="20sp"
+
+
+
+        android:hint="      zl241@mail.com"
+
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+
+
+
+
+        />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="327dp"
+        android:autofillHints="phone"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:prefixText="+91 - "
+        android:layout_marginTop="32dp"
+        app:prefixTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:prefixTextColor="#000000"
+        android:id="@+id/mobilenumber"
+
+
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint=""
+            android:autofillHints="phone"
+            android:maxLength="10"
+
+
+            />
+
+        <requestFocus>
+
+        </requestFocus>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+
+
+        >
+
+
+
+    <Button
+        android:id="@+id/Continue_Btn"
+        android:layout_width="327dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:text="CONTINUE"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/button_color"
+
+
+        />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_mobile"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            >
+
+        </ProgressBar>
+    </FrameLayout>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="254dp"
+        android:background="@drawable/image_one_background"
+        android:src="@drawable/image_one_foreground"
+
+        />
+
+
+</LinearLayout>
