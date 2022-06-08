@@ -24,6 +24,8 @@ public class HomePage extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
+        button = findViewById(R.id.Logout_Btn);
+
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
